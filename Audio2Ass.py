@@ -2,7 +2,7 @@ from whisper import available_models
 from transcript_video_for_ssa import create_subtitles_for_file
 from furigana_romaji_translation_for_ssa import markup_subtitle_file_ssa
 
-file = "input.mp4"
+file = "input.mp3"
 print("Models:", *[str(i) for i in available_models()], sep="\n")
 model = "large-v2"
 while model not in available_models():
